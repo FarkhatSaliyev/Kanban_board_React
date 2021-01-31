@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+const data = [
+  {
+    id: 1,
+    title: "backlog",
+    card: [
+      {
+        id: 1,
+        task: "Implement Chat",
+      },
+      {
+        id: 2,
+        task: "Implement REST backend",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "todo",
+    card: [
+      {
+        id: 1,
+        task: "Fix JS code",
+      },
+      {
+        id: 2,
+        task: "Clean HTML",
+      },
+    ],
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="backlog">
+        <h3>Backlog</h3>
+      </div>
+      <div className="todo">
+        <h3>Todo</h3>
+      </div>
+      <div className="progress">
+        <h3>Progress</h3>
+      </div>
+      <div className="done">
+        <h3>Done</h3>
+      </div>
     </div>
   );
 }
